@@ -5,8 +5,8 @@
   "scripts": {
     "start": "npm run uninstall && react-scripts start",
     "build": "npm run uninstall && react-scripts build && clientlib --verbose",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "test": "npm run uninstall && react-scripts test",
+    "eject": "npm run uninstall && react-scripts eject",
     "sync": "aemsync -d -w ../ui.apps/src/main/content",
     "uninstall": "npm uninstall node-sass"
   },

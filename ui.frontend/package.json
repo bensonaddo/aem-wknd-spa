@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && clientlib --verbose",
+    "start": "npm run uninstall && react-scripts start",
+    "build": "npm run uninstall && react-scripts build && clientlib --verbose",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sync": "aemsync -d -w ../ui.apps/src/main/content"
+    "sync": "aemsync -d -w ../ui.apps/src/main/content",
+    "uninstall": "npm uninstall node-sass"
   },
   "dependencies": {
     "@adobe/aem-react-editable-components": "^1.1.6",
